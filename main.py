@@ -1,10 +1,12 @@
 import pygame
 
+from Game import Game
 
-class Bullet(pygame.sprite.Sprite):
- def __init__(self, x, y, bullet_group, player):
-    super().__init__()
+#Initiailize pygame
+pygame.init()
 
-    self.VELOCITY = 20
-    self.RANGE = 500
-   
+# Create a game
+Game()
+
+#End the game
+pygame.quit()
